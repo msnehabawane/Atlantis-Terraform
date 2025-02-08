@@ -4,7 +4,10 @@ USER root
 
 RUN apk add --no-cache aws-cli
 
-RUN mkdir /home/atlantis/.aws
+RUN mkdir -p /home/atlantis/.aws
+
 RUN touch /home/atlantis/.aws/credentials
 
-RUN chown atlantis.atlantis /home/atlantis/ -R
+RUN chown -R atlantis:atlantis /home/atlantis/
+
+USER atlantis
