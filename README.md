@@ -1,4 +1,3 @@
-# Atlantis-Terraform
 # Atlantis integartion with GitHub
 
 ## Commands to install Docker in Amazon Linux 3
@@ -22,11 +21,11 @@ sudo systemctl status docker.service
 
 ### Example for above command with single repository
 
-```docker run -itd -p 4000:4141 --name atlantis atlantis server --automerge --autoplan-modules --gh-user=jerinrathnam --gh-token=ghp_lj8nNeckni0N#C*54urnDBUCc0h3f#BFU --repo-allowlist=github.com/easydeploy-cloud/terraform-atlantis```
+```docker run -itd -p 4000:4141 --name atlantis atlantis server --automerge --autoplan-modules --gh-user=your username --gh-token=ghp_lj8nNeckni0N#C*54urnDBUCc0h3f#BFU --repo-allowlist=github.com/username/Atlantis-Terraform```
 
 ### Example for above command with all repositories in a GitHub account or organization
 
-``` docker run -itd -p 4000:4141 --name atlantis atlantis server --automerge --autoplan-modules --gh-user=jerinrathnam --gh-token=nNeckni0N#C*54urnDBUCc0h3f#BFU --repo-allowlist=github.com/easydeploy-cloud/* ```
+``` docker run -itd -p 4000:4141 --name atlantis atlantis server --automerge --autoplan-modules --gh-user=username --gh-token=nNeckni0N#C*54urnDBUCc0h3f#BFU --repo-allowlist=github.com/username/* ```
 
 ## To ssh into the Atlantis Docker Container
 
